@@ -19,14 +19,14 @@ public class Tests {
     }
 
     @Test
-    public void positiveСheckFileIsCreatedWeb() throws Exception {
+    public void positiveCheckFileIsCreatedWeb() throws Exception {
 
         OutputResult result = checkWebData("path_to_web");
         checkResponseParameters(0, true, result);
     }
 
     @Test
-    public void positiveСheckCorrectCountWeb() throws Exception {
+    public void positiveCheckCorrectCountWeb() throws Exception {
         int expectedValue = 10;
 
         OutputResult result = checkWebData("path_to_web");
@@ -34,7 +34,7 @@ public class Tests {
     }
 
     @Test
-    public void positiveСheckFileContainsAllData() throws Exception {
+    public void positiveCheckFileContainsAllData() throws Exception {
         int expectedValue = 10;
 
         assumeTrue("При подготовке теста не удалось записать результат в файл",
@@ -44,7 +44,7 @@ public class Tests {
     }
 
     @Test
-    public void positiveСheckCorrectCountFile() throws Exception {
+    public void positiveCheckCorrectCountFile() throws Exception {
         int expectedValue = 10;
 
         OutputResult result = checkFileData("path_to_file");
